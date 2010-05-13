@@ -1,5 +1,7 @@
 class TodoItemsController < InheritedResources::Base
-  before_filter :authenticate_user!
+  respond_to :html, :xml, :json
+  before_filter :login_or_oauth_required
+  
   
   def create
     create! do |success, failure|
