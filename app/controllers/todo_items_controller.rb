@@ -7,4 +7,8 @@ class TodoItemsController < InheritedResources::Base
     end
   end
   
+  protected
+    def begin_of_association_chain
+      current_user
+    end
 end
