@@ -11,6 +11,9 @@ Rails::Initializer.run do |config|
   config.gem 'haml'
   config.gem 'formtastic'
   config.gem 'devise', :version => '1.0.7'
+  
+  config.gem 'oauth', :version => '0.4.0'
+  config.gem 'oauth-plugin', :version => '0.3.14'
   config.time_zone = 'UTC'
 
   config.action_mailer.default_url_options = { :host => 'todo.local' }
