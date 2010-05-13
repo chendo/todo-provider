@@ -9,6 +9,10 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   config.gem 'inherited_resources'
   config.gem 'haml'
+  config.gem 'formtastic'
+  config.gem 'devise', :version => '1.0.7'
   config.time_zone = 'UTC'
 
+  config.action_mailer.default_url_options = { :host => 'todo.local' }
+  
 end

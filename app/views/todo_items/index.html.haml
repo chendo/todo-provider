@@ -1,0 +1,7 @@
+%h1 Todos
+
+%ul
+  - collection.each do |t|
+    %li= link_to t
+    
+= link_to 'New todo', new_todo_item_path
